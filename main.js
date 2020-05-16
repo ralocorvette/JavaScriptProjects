@@ -470,7 +470,20 @@
 //     return 0;
 // //   }
 // });
-const prices = [10, 30, 15, 25, 50, 40, 5];
+// const prices = [10, 30, 15, 25, 50, 40, 5];
 
-prices.sort((a, b) => a - b);
-console.log(prices);
+// prices.sort((a, b) => a - b);
+// console.log(prices);
+
+
+const products = [
+    {name:'baseball bat',price:25},
+    {name:'electric fan', price: 35},
+    {name:'computer keyboard',price:100},
+    {name:'gaming headphones',price:177},
+    {name:'telephone', price: 80}
+];
+
+const promos = products.filter(product => product.price >20)
+.map(product =>`the ${product.name} us ${product.price/2} dollars`);
+console.log(promos)
