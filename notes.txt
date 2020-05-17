@@ -1,0 +1,5 @@
+HTTP Requests
+-Make HTTP requests to get data from another server
+
+- We make these requests to API endpoints
+/Promise is either going to get resolved or rejected
